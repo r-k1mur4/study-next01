@@ -45,7 +45,7 @@ export default function Home() {
         />
       </div>
 
-      <Headline title="About page" page="about"/>
+      <Headline page="about"/>
       <List />
     </main>
   );

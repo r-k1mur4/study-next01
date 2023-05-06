@@ -45,7 +45,13 @@ export default function Home() {
         />
       </div>
 
-      <Headline title="Index page" page="index"/>
+      <Headline page="index" number={1111} array={[1, 2, 3]}
+        obj={{ foo: "foo", bar: "bar" }}
+        boolean
+        comp={<div>foo</div>}
+        onClick={() => alert("クリック！")}
+      />
+
       <List />
 
     </main>

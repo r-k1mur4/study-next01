@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
-import {List} from '../components/List.js'
+import { List } from '../components/List.js'
+import { Headline } from "../components/Headline.js";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -44,9 +45,7 @@ export default function Home() {
         />
       </div>
 
-
-      <p>gitmoji test      </p>
-
+      <Headline title="Index page" page="index"/>
       <List />
 
     </main>

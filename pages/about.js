@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import { List } from '../components/List'
+import { Headline } from '@/components/Headline';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,7 +21,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            By{' '}
+            By{" "}
             <Image
               src="/vercel.svg"
               alt="Vercel Logo"
@@ -44,8 +45,8 @@ export default function Home() {
         />
       </div>
 
+      <Headline title="About page" page="about"/>
       <List />
-
     </main>
-  )
+  );
 }

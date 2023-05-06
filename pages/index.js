@@ -44,6 +44,9 @@ export default function Home() {
         />
       </div>
 
+
+      <p>gitmoji test      </p>
+
       <List />
 
     </main>

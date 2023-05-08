@@ -1,8 +1,5 @@
 import { Main } from "../components/Main.js";
 
-
 export default function Home() {
-  return (
-    <Main page="Index" />
-  )
+  return <Main page="About" />;
 }

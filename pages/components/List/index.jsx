@@ -2,7 +2,7 @@
 const ITEMS = [
   {
     href: "https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app",
-    title: "Docs \u2192",
+    title: "Docs",
     description: "Find in-depth information about Next.js features and API.",
   },
   {

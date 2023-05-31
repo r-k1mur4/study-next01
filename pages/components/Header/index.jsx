@@ -3,8 +3,8 @@ import { Fragment, React } from "react";
 import Image from "next/image";
 
 import { Inter } from "next/font/google";
-import { List } from "../components/List.js";
-import { Headline } from "../components/Headline.js";
+import { List } from "../List/index.jsx";
+import { Headline } from "../Headline/index.jsx";
 
 import styles from "./Header.module.css";
 

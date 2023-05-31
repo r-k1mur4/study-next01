@@ -2,9 +2,9 @@ import { React } from "react";
 import Image from "next/image";
 
 import { Inter } from "next/font/google";
-import { List } from "../components/List.js";
-import { Headline } from "../components/Headline.js";
-import { Header } from "./Header.js";
+import { List } from "pages/components/List/index.jsx";
+import { Headline } from "pages/components/Headline/index.jsx";
+import { Header } from "pages/components/Header/index.jsx";
 
 const inter = Inter({ subsets: ["latin"] });
 

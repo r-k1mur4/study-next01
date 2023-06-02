@@ -1,16 +1,16 @@
-import { React, useCallback } from "react";
+import { React, useState } from "react";
 import styles from "./Headline.module.css";
 
 
 export function Headline(props) {
 
-const foo = 1;
+  // ↓Headlineコンポーネントないでのみ使用するstate
+  const [count, setCount] = useState(1);
 
-const handlerClick = useCallback((e, foo) => {
-  console.log(e.target.href);
-  e.preventDefault();
-  alert(foo);
-}, []);
+  // ボタンクリック時の処理（fooの値を1増やす）
+  const handlerClick = (e) => {
+    setCount(foo => foo + 1);
+  };
 
 
   return (
@@ -21,14 +21,14 @@ const handlerClick = useCallback((e, foo) => {
         Get started by editing {props.children}
       </p>
 
-      {/* button-test */}
-      {/* <a
-        href="/about"
-        onClick={handlerClick}
-      >
-        /about/への遷移ボタン
-      </a> */}
+      <h1>{ count }</h1>
 
+      <button
+        onClick={handlerClick}
+        className={styles.btn01}
+      >
+        カウントアップボタン
+      </button>
     </>
   );
 }

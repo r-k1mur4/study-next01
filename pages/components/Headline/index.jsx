@@ -22,14 +22,13 @@ const handlerClick = useCallback((e, foo) => {
       </p>
 
       {/* button-test */}
-      <a
+      {/* <a
         href="/about"
         onClick={handlerClick}
       >
+        /about/への遷移ボタン
+      </a> */}
 
-        ボタン
-
-      </a>
     </>
   );
 }

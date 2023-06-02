@@ -12,12 +12,10 @@ export function Main(props) {
 
   useEffect(() => {
     // mount時の処理
-    console.log("mount");
     document.body.style.backgroundColor = "lightblue";
 
     // unmount時の処理
     return () => {
-      console.log("unmount");
       document.body.style.backgroundColor = null;
     };
   }, []);

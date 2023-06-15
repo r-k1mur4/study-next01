@@ -26,7 +26,9 @@ const ITEMS = [
   },
 ];
 
-export function List(){
+// const Main = (props) => {
+const  List = (props) => {
+// export function List(){
   return (
     <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
       {ITEMS.map((item) => {
@@ -123,3 +125,6 @@ export function List(){
     </div>
   );
 };
+
+
+export default List;

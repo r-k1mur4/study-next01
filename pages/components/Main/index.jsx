@@ -2,13 +2,14 @@ import { React, useEffect } from "react";
 import Image from "next/image";
 
 import { Inter } from "next/font/google";
-import { List } from "pages/components/List/index.jsx";
-import { Headline } from "pages/components/Headline/index.jsx";
-import { Header } from "pages/components/Header/index.jsx";
+import  List  from "pages/components/List/index.jsx";
+import Headline from "pages/components/Headline/index.jsx";
+import Header  from "pages/components/Header/index.jsx";
+import HooksExample from "pages/components/Example/index.jsx";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export function Main(props) {
+const Main = (props) => {
 
   useEffect(() => {
     // mount時の処理
@@ -31,7 +32,13 @@ export function Main(props) {
         <code>pages/{props.page}.js</code>
       </Headline>
 
+      <HooksExample />
+
+
       <List />
     </main>
   );
 }
+
+
+export default Main;

@@ -3,14 +3,15 @@ import { Fragment, React } from "react";
 import Image from "next/image";
 
 import { Inter } from "next/font/google";
-import { List } from "../List/index.jsx";
-import { Headline } from "../Headline/index.jsx";
+import  List  from "../List/index.jsx";
+import  Headline  from "../Headline/index.jsx";
 
 import styles from "./Header.module.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export function Header(props) {
+const Header = (props) => {
+// export function Header(props) {
   return (
     <Fragment>
 
@@ -64,3 +65,5 @@ export function Header(props) {
     </Fragment>
   );
 }
+
+export default Header;
